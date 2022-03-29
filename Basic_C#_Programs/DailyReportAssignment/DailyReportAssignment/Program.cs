@@ -22,8 +22,15 @@ namespace DailyReportAssignment
             Console.WriteLine("You are on page: " + pageNumber);
 
             Console.WriteLine("Do you need help with anything? Please answer \"true\" or \"false.\"");
-            string needHelp = Console.ReadLine();
-            Console.WriteLine("You would like help: " +needHelp);
+            bool needHelp = bool.Parse(Console.ReadLine());
+            if (needHelp)
+            {
+                Console.WriteLine("Yes,I would like help.");
+            }
+            else
+            {
+                Console.WriteLine("No, I dont need help.");
+            }
 
             Console.WriteLine("Were there any positive experiences you’d like to share? Please give specifics.");
             string positiveExp = Console.ReadLine();
