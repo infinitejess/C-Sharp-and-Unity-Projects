@@ -102,24 +102,36 @@ class Program
 
         //string list with 2 identical values
         List<string> cities = new List<string>() { "New York", "San Diego", "Los Angeles", "New York" };
+        List<string> unique = new List<string>();
+        List<string> duplicates = new List<string>();
 
         //foreach evalutes each element, display message showing string and if its a repeat
-        string cityMatch = cities[0];
+      
         foreach (string city in cities)
         {
-            if (city == cityMatch) 
-                {
-                    Console.WriteLine(city + " is a duplicate");
-                }
+            if (!unique.Contains(city))
+            {
+                unique.Add(city);
+                continue;
+            }
             else
+            {
+                duplicates.Add(city);
+            }
+
+             foreach (string city1 in unique)
                 {
-                    Console.WriteLine(city);
+                    Console.WriteLine(city1 + " is unique");
                 }
-            
+             foreach (string city2 in duplicates)
+                {
+                    Console.WriteLine(city2 + " is a duplicate");
+                }
+
         }
 
 
         Console.ReadLine();
-    }
-}
+            }
+        }
 
