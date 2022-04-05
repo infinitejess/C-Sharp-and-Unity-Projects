@@ -14,7 +14,8 @@ namespace Method221Assignment
             int x = 10;
             int y = 15;
             example.classOne(x, y);
-            
+            example.classOne(x: 10, y: 15);
+
 
             Console.ReadLine();
 
