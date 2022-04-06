@@ -25,6 +25,8 @@ namespace Class224Assignment
             int sum2 = result.methodThree(10, 20, 15);
             Console.WriteLine("2 varaible addition equals: " + (sum2));    ///methodthree with 3 variables
 
+            classTwo.showText(); //static class 
+
             Console.ReadLine();
         }
     }
