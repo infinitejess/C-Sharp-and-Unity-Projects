@@ -15,6 +15,8 @@ namespace AbstractClassAssignment
             newEmp.lastName = "Student";
             newEmp.SayName();
 
+            newEmp.Quit(); //employee is an iquittable type?
+
             Console.ReadLine();
         }
     }
