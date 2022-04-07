@@ -10,12 +10,12 @@ namespace AbstractClassAssignment
     {
         static void Main(string[] args)
         {
-            Employee newEmp = new Employee();
-            newEmp.firstName = "Sample";
-            newEmp.lastName = "Student";
-            newEmp.SayName();
+            IQuittable newEmp = new Employee();
+            //newEmp.firstName = "Sample";
+            //newEmp.lastName = "Student";
+            //newEmp.SayName();
 
-            newEmp.Quit(); //employee is an iquittable type?
+            newEmp.Quit(); 
 
             Console.ReadLine();
         }
