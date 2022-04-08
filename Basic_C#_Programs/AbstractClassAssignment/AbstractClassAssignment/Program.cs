@@ -10,16 +10,29 @@ namespace AbstractClassAssignment
     {
         static void Main(string[] args)
         {
-            int Id1 = 123;
-            int Id2 = 456;
+            Employee<string> strings = new Employee<string>();
+            strings.things = new List<string> { "Jess", "Jp", "Nami" };
+            for (int i = 0; i < strings.things.Count; i++)
+            {
+                Console.WriteLine(strings.things[i]);
+            }
 
-            Employee newEmp1 = new Employee();
-            newEmp1.Id = Id1;
+            Employee<int> ints = new Employee<int>();
+            ints.things = new List<int>() { 1, 2, 3, 4 };
+            for (int i = 0; i < ints.things.Count; i++)
+            {
+                Console.WriteLine(ints.things[i]);
+            }
 
-            Employee newEmp2 = new Employee();
-            newEmp2.Id = Id2;
 
-            var result = newEmp1 == newEmp2;
+
+            //int Id1 = 123;
+            //int Id2 = 456;
+            //Employee newEmp1 = new Employee();
+            //newEmp1.Id = Id1;
+            //Employee newEmp2 = new Employee();
+            //newEmp2.Id = Id2;
+            //var result = newEmp1 == newEmp2;       -->compare 2 employee objs with == overload
 
             //Employee newEmp = new Employee();
             //newEmp.firstName = "Sample";
